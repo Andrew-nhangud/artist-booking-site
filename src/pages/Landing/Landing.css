@@ -1,0 +1,94 @@
+/*main container for the landing page*/
+.landing-container {
+  background-color: #111;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+/*container for heading and two paragraphs*/
+.landing-content {
+  width: 80%; /*reducing the container main content*/
+  margin: auto; /*placing the content in the center*/
+  margin-top: 100px; /*adding space at the top of the container*/
+}
+
+/*heading style*/
+.landing-content h1 {
+  margin-bottom: 100px; /*adding space at the bottom ot the main header*/
+  font-size: 58px;
+  font-weight: 400;
+  font-style: italic;
+  color: #d8d8d8;
+}
+
+/*organiser option styles*/
+.organiser-option {
+  font-size: 26px;
+  font-weight: 200;
+  margin-top: 230px; /*adding space at the top ot the organiser-para*/
+  color: #d8d8d8;
+}
+
+/*artist option styles*/
+.artist-option {
+  font-size: 26px;
+  font-weight: 200;
+  margin-top: 20px; /*adding space at the top of the artist-para*/
+  margin-bottom: 40px; /*adding space at the bottom of the artist-para*/
+  color: #d8d8d8;
+}
+
+/*Tablet styles*/
+@media (min-width: 768px) {
+  /*main container for the landing page*/
+  .landing-container {
+    background-color: #111;
+    display: flex;
+    flex-direction: row; /*makes content to flow in a row*/
+    gap: 20px;
+  }
+
+  .landing-content {
+    width: 80%; /*reducing the container main content*/
+    margin-left: 50px; /*pushing the content to right*/
+    margin-top: 100px; /*adding space at the top of the container*/
+  }
+  /*landing image*/
+  .landing-img {
+    width: 50%;
+    height: 558px;
+  }
+}
+
+/*Desktop styles*/
+@media (min-width: 1024px) {
+  /*heading style*/
+  .landing-content h1 {
+    margin-bottom: 100px; /*adding space at the bottom ot the main header*/
+    font-size: 88px;
+    font-weight: 400;
+    font-style: italic;
+  }
+
+  /*organiser option styles*/
+  .organiser-option {
+    font-size: 30px;
+    font-weight: 200;
+    margin-top: 250px; /*adding space at the top ot the organiser-para*/
+  }
+
+  /*organiser option styles*/
+  .artist-option {
+    font-size: 30px;
+    font-weight: 200;
+    margin-top: 20px; /*adding space at the top of the artist-para*/
+    margin-bottom: 40px; /*adding space at the bottom of the artist-para*/
+  }
+
+  /*landing image*/
+  .landing-img {
+    width: 70%;
+    height: 645px;
+  }
+}
