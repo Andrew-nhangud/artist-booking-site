@@ -1,0 +1,50 @@
+/* container for the whole navbar*/
+.navbar {
+  position: fixed; /*placing the main container fixed*/
+  width: 100%; /*making the container to be full width */
+  height: 80px;
+  background-color: var(--bg);
+}
+
+/*container for the links*/
+.nav-links {
+  margin-top: 25px; /*adding space at the top of the links*/
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  gap: 60px; /*adding space in between the two links*/
+}
+
+li {
+  list-style: none; /*removing the the dots*/
+}
+
+/*styles for the links*/
+.landing-link,
+.browser-link {
+  color: black;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.landing-link {
+  font-size: 26px;
+  letter-spacing: 2.5px;
+  font-style: italic;
+}
+
+.browser-link {
+  color: var(--accent);
+}
+
+@media (min-width: 768px) {
+  .nav-links {
+    gap: 390px; /* adding space between the two links*/
+  }
+}
+
+@media (min-width: 1024px) {
+  .nav-links {
+    gap: 990px; /*adding space between the two links*/
+  }
+}
