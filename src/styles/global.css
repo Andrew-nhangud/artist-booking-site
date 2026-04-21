@@ -19,3 +19,7 @@
   --error: #a85c5c;
   --success: #6b8a6b;
 }
+
+.link {
+  text-decoration: none;
+}
