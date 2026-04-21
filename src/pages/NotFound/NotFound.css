@@ -1,0 +1,11 @@
+.errorContainer {
+  margin-top: 250px; /*pushing the content down*/
+  display: flex;
+  flex-direction: column;
+  align-items: center; /*placing the content to the center*/
+  gap: 15px; /*adding space between the content */
+}
+
+.link {
+  color: black; /*changing the color of the link*/
+}
