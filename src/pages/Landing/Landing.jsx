@@ -7,7 +7,7 @@ export const Landing = () => {
     <section className="landing-container">
       <div className="landing-content">
         <h1>RÉSERVE</h1>
-        <Link to="/browser">
+        <Link className="link" to="/browser">
           <p className="organiser-option">I'm an Organiser</p>
         </Link>
 
