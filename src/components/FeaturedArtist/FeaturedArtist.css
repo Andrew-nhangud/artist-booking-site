@@ -1,0 +1,72 @@
+/* the main container of the featured section */
+.featured {
+  padding-top: 80px;
+}
+
+/*style for the feature box */
+.ft-box {
+  color: var(--accent);
+  border: 1px solid var(--accent);
+  width: 63%; /* setting the width of the box*/
+  text-align: center;
+  font-size: 45px;
+  font-style: italic;
+  margin-top: 50px; /*adding space at the top of the feature box*/
+}
+
+/* contianer for the featured artists info*/
+.ft-info {
+  margin-left: 20px; /* adding space at the left side of the container*/
+}
+
+/*styles the name of the featured artist*/
+.ft-name {
+  font-size: 30px;
+  color: var(--white);
+  margin-top: 85px; /*adding space at the top of the element */
+}
+
+/* contianer for the artist info*/
+.artist-info {
+  display: flex;
+  gap: 20px;
+  color: var(--accent);
+}
+
+/*styles for the button*/
+.ft-profile-btn {
+  border: none;
+  background-color: var(--accent);
+  padding: 10px;
+  font-size: 15px;
+  border-radius: 4px;
+  margin-top: 2px;
+}
+
+@media (min-width: 768px) {
+  /*style for the feature box */
+  .ft-box {
+    width: 30%; /* setting the width of the box*/
+  }
+
+  /*styles the name of the featured artist*/
+  .ft-name {
+    font-size: 30px;
+    color: var(--white);
+    margin-top: 90px; /*adding space at the top of the element */
+  }
+}
+
+@media (min-width: 1024px) {
+  /*style for the feature box */
+  .ft-box {
+    width: 20%; /* setting the width of the box*/
+  }
+
+  /*styles the name of the featured artist*/
+  .ft-name {
+    font-size: 32px;
+    color: var(--white);
+    margin-top: 120px; /*adding space at the top of the element */
+  }
+}
