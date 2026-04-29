@@ -3,27 +3,44 @@
   padding-top: 80px;
 }
 
+/* the overlay container for the featured section */
+.overlay {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 90%; /* setting the height of the overlay */
+}
+
+/* style for the featured image container */
+.featured-image {
+  background-size: cover;
+  background-position: center;
+  height: 60vh;
+  width: 100%;
+  overflow: hidden;
+}
+
 /*style for the feature box */
 .ft-box {
   color: var(--accent);
   border: 1px solid var(--accent);
-  width: 63%; /* setting the width of the box*/
+  width: 75%; /* setting the width of the box*/
   text-align: center;
-  font-size: 45px;
+  font-size: 2.7rem;
   font-style: italic;
-  margin-top: 50px; /*adding space at the top of the feature box*/
+  margin-top: 3rem; /*adding space at the top of the feature box*/
 }
 
-/* contianer for the featured artists info*/
+/* contianer for the featured artists name and genre*/
 .ft-info {
-  margin-left: 20px; /* adding space at the left side of the container*/
+  margin-left: 1.5rem; /* adding space at the left side of the container*/
 }
 
 /*styles the name of the featured artist*/
 .ft-name {
-  font-size: 30px;
+  font-size: 1.8rem;
   color: var(--white);
-  margin-top: 85px; /*adding space at the top of the element */
+  /*margin-top: 30%; adding space at the top of the element */
 }
 
 /* contianer for the artist info*/
@@ -38,7 +55,7 @@
   border: none;
   background-color: var(--accent);
   padding: 10px;
-  font-size: 15px;
+  font-size: 1rem;
   border-radius: 4px;
   margin-top: 2px;
 }
@@ -49,11 +66,35 @@
     width: 30%; /* setting the width of the box*/
   }
 
+  /*style for the feature box */
+  .ft-box {
+    color: var(--accent);
+    border: 1px solid var(--accent);
+    width: 40%; /* setting the width of the box*/
+    text-align: center;
+    font-size: 3.5rem;
+    font-style: italic;
+    margin-top: 3rem; /*adding space at the top of the feature box*/
+  }
+
   /*styles the name of the featured artist*/
   .ft-name {
-    font-size: 30px;
+    font-size: 2.5rem;
     color: var(--white);
-    margin-top: 90px; /*adding space at the top of the element */
+    margin-top: 6rem; /*adding space at the top of the element */
+  }
+
+  /* button styles */
+  .ft-profile-btn {
+    margin-bottom: 30px; /* adding space at the bottom of the button */
+  }
+
+  /* style for the featured image container */
+  .featured-image {
+    height: 70%; /* setting the height of the image */
+  }
+  .overlay {
+    height: 80%; /* setting the height of the overlay */
   }
 }
 
@@ -65,8 +106,8 @@
 
   /*styles the name of the featured artist*/
   .ft-name {
-    font-size: 32px;
+    font-size: 2.5rem;
     color: var(--white);
-    margin-top: 120px; /*adding space at the top of the element */
+    margin-top: 12rem; /*adding space at the top of the element */
   }
 }
