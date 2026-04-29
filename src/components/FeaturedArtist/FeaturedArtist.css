@@ -40,7 +40,6 @@
 .ft-name {
   font-size: 1.8rem;
   color: var(--white);
-  /*margin-top: 30%; adding space at the top of the element */
 }
 
 /* contianer for the artist info*/
@@ -68,13 +67,8 @@
 
   /*style for the feature box */
   .ft-box {
-    color: var(--accent);
-    border: 1px solid var(--accent);
     width: 40%; /* setting the width of the box*/
-    text-align: center;
     font-size: 3.5rem;
-    font-style: italic;
-    margin-top: 3rem; /*adding space at the top of the feature box*/
   }
 
   /*styles the name of the featured artist*/
