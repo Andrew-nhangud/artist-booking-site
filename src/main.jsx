@@ -1,20 +1,23 @@
 import { StrictMode } from "react";
 import { createRoot } from "react-dom/client";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
-import App from "./App.jsx";
 import { Landing } from "./pages/Landing/Landing.jsx";
 import { Browser } from "./pages/Browser/Browser.jsx";
 import { NotFound } from "./pages/NotFound/NotFound.jsx";
+import "./styles/global.css";
 
 const router = createBrowserRouter([
   {
-    path: "/", // Default home view inside layout
+    path: "/", // This is the path for the landing page
     element: <Landing />,
-    errorElement: <NotFound />,
   },
   {
-    path: "/browser", // Page accessible at /browser
+    path: "/browser", // This is the path for the browser page
     element: <Browser />,
+  },
+  {
+    path: "*", // This will catch any undefined routes and render the NotFound component
+    element: <NotFound />,
   },
 ]);
 
