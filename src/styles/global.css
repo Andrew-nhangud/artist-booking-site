@@ -23,3 +23,15 @@
 .link {
   text-decoration: none;
 }
+
+.align {
+  width: 87%;
+  margin: auto;
+}
+
+@media (min-width: 768px) {
+  .align {
+    width: 93%;
+    margin: auto;
+  }
+}
