@@ -8,21 +8,27 @@ export const Browser = () => {
     <section>
       <Navbar /> {/* calling the navbar */}
       <FeaturedArtist />
-      <div className="align">
+      <div className="align browser-container">
         <h1 className="title">Artists</h1>
         <p className="browser-info">
           Explore our curated roster of extraordinary talent. Select an artist
           to view their full profile and submit a booking request.
         </p>
+
+        {/* Artist cards container */}
         <div className="card-container">
+          {/* Artist card */}
           {ArtistData.map((artist, id) => (
-            <div className="card" key={artist.id}>
+            <div className="artist-card" key={artist.id}>
+              {/* Artist image container */}
               <div className="available-container">
                 <img
                   className="artist-img"
                   src={artist.image}
                   alt="Artist images"
                 />
+
+                {/* Availability indicator */}
                 <div className="visibility">
                   {artist.isAvailable === true ? (
                     <p className="indicator ">
@@ -35,8 +41,9 @@ export const Browser = () => {
                   )}
                 </div>
               </div>
+
               <p className="artist-name">{artist.name} </p>
-              <div className="basicInfo">
+              <div className="artist-info">
                 <p>{artist.genre}</p>
                 <p>{artist.location}</p>
               </div>
